@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: url(florest.png) no-repeat center center fixed;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(17, 5, 48, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-content h1 {
+    color: #fff;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+
+.left-content span {
+    letter-spacing: 10px;
+    text-decoration: underline;
+    color: #fff;
+    font-size: 50pt;
+    text-transform: uppercase;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(255, 238, 238, 0.3);
+    border-bottom: 0.1px solid rgba(244, 251, 253, 0.719);
+    border-right: 0.3px solid white;
+}
+
+.card-login h1 {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(53, 51, 109, 0.1);
+    backdrop-filter: saturate(180%) blur(20px);
+    color: #fff;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.textfield label {
+    color: #fff;
+    font-size: 12pt;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder {
+    color: #fff;
+}
+
+.button-login {
+    width: 100%;
+    margin: 25px;
+    padding: 16px 8px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: rgb(25, 49, 70);
+    background: rgba(135, 255, 141, 0.726);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 10px 30px 2px rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+}
+
+.button-login:hover {
+    background: rgba(255, 255, 255, 0.726);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 10px 30px 10px rgba(40, 255, 165, 0.4);
+    transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-content h1 {
+        display: none;
+    }
+
+    .left-content {
+        width: 100vw;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100vw;
+        height: auto;
+    }
+
+    .left-content img {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 80%;
+
+    }
+}
